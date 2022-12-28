@@ -10,16 +10,14 @@ class Program
     pedro.Cpf = "123456789";
     pedro.Salario = 2000;
     Console.WriteLine(pedro.Nome);
-    Console.WriteLine(pedro.Cpf);
-    Console.WriteLine(pedro.Salario);
+    Console.WriteLine(pedro.getBonificacao());
 
     Diretor roberta = new Diretor();
     roberta.Nome = "Roberta Silva";
     roberta.Cpf = "987654321";
     roberta.Salario = 5000;
     Console.WriteLine(roberta.Nome);
-    Console.WriteLine(roberta.Cpf);
-    Console.WriteLine(roberta.Salario);
+    Console.WriteLine(roberta.getBonificacao());
 
     GerenciadorDeBonificacao gerenciador = new GerenciadorDeBonificacao();
     gerenciador.Registrar(pedro);

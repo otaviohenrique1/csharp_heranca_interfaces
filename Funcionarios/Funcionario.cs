@@ -6,7 +6,8 @@ namespace bytebank.Funcionarios
     public string? Cpf { get; set; } // remover o anulavel => '?'
     public double Salario { get; set; }
 
-    public double getBonificacao()
+    // 'virtual' => Indica que o metodo pode ser sobrescrito
+    public virtual double getBonificacao()
     {
       return this.Salario * 0.10;
     }

@@ -5,9 +5,11 @@ namespace bytebank.Funcionarios
   */
   public class Diretor:Funcionario
   {
-    public double getBonificacao()
+    // 'override' => Indica que é um metodo sobrescrito
+    // 'base' => Acessar o metodo da superclasse(classe que foi herdada) e equivale ao 'super' em outras linguagens
+    public override double getBonificacao()
     {
-      return this.Salario;
+      return this.Salario + base.getBonificacao();
     }
   }
 }
